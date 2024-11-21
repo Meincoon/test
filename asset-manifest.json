@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/test/static/css/main.d6fbf79b.css",
+    "main.js": "/test/static/js/main.c4c71cdd.js",
+    "static/media/hero1400px.jpg": "/test/static/media/hero1400px.4da088f8d6fd496e9c24.jpg",
+    "static/media/hero1024px.jpg": "/test/static/media/hero1024px.b7bfae3dd53f52005db2.jpg",
+    "static/media/Rectangle2.jpg": "/test/static/media/Rectangle2.6291f1fd78ebb87f2560.jpg",
+    "static/media/Rectangle1.jpg": "/test/static/media/Rectangle1.d4bc3b603d861a5b53db.jpg",
+    "static/media/hero320px.jpg": "/test/static/media/hero320px.6604100e0962deda6510.jpg",
+    "static/media/FuturaPT-Medium.woff2": "/test/static/media/FuturaPT-Medium.a1c0db37256ed2f30070.woff2",
+    "static/media/FuturaPT-Book.woff2": "/test/static/media/FuturaPT-Book.d11589b013c4d29eea74.woff2",
+    "static/media/loading.svg": "/test/static/media/loading.d9777e2dec46288da9b79b47fbc437ac.svg",
+    "static/media/logo.svg": "/test/static/media/logo.6d22b73f6fe21fc87e26e8c5d27c222e.svg",
+    "static/media/phone.svg": "/test/static/media/phone.18d388f95a295a11ba921d80a12cc2a4.svg",
+    "static/media/arrow.svg": "/test/static/media/arrow.d392183eb96e851abdf70abadedefd97.svg",
+    "static/media/arrowSmall.svg": "/test/static/media/arrowSmall.63aefa1c06dad7c7271bf6b2b7248269.svg",
+    "index.html": "/test/index.html",
+    "main.d6fbf79b.css.map": "/test/static/css/main.d6fbf79b.css.map",
+    "main.c4c71cdd.js.map": "/test/static/js/main.c4c71cdd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6fbf79b.css",
+    "static/js/main.c4c71cdd.js"
+  ]
+}
