@@ -1,0 +1,132 @@
+.article {
+  display: grid;
+  width: 1fr;
+  grid-template-areas:
+    "category . date"
+    "title title title"
+    "txt txt txt";
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto 1fr;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  cursor: pointer;
+  gap: 20px;
+  & .title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 23px;
+    max-height: calc(23px * 2);
+    height: 48px;
+  }
+  &:hover {
+    box-shadow: 4px 8px 40px 0px #08186F33;
+  }
+  &:active {
+    border: 2px solid #5d71dd;
+  }
+  &__vertical {
+    min-width: 320px;
+    max-width: 320px;
+    height: 400px;
+    background: #5d71dd;
+    grid-template-areas:
+      "category . ."
+      "title title title"
+      "date . .";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    padding: 30px;
+    overflow: hidden;
+    &:hover {
+      background-color: #fff;
+      .article__category {
+        color: #5d71dd;
+        background-color: #5D71DD0D;
+      }
+      .title {
+        color: #2F2222;
+      }
+      .article__date {
+        color: #2F222266;
+      }
+    }
+    & .has-background {
+      background-color: transparent;
+    }
+    .article__date {
+      text-align: left;
+      color: #fff;
+    }
+
+    .article__category {
+      color: #fff;
+      background-color: #758de4;
+    }
+
+    .article__title {
+      color: #fff;
+    }
+  }
+  &__with-image {
+    .article__category {
+      background-color: #FFFFFF33;
+    }
+    &:hover {
+      background-color: transparent;
+      .article__category {
+        color: #fff;
+        background-color: #FFFFFF33;
+      }
+      .title {
+        color: #fff;
+      }
+      .article__date {
+        color: #fff;
+      }
+    }
+  }
+  &__dual {
+    padding: 30px 40px;
+    grid-template-areas:
+      "category . date"
+      "title title title";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr;
+    max-height: 180px;
+    min-height: 180px;
+    height: 180px;
+  }
+
+  &__category,
+  &__date {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__category {
+    grid-area: category;
+    background-color: #f7f8fd;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #5d71dd;
+  }
+
+  &__date {
+    grid-area: date;
+    text-align: right;
+    color: rgba(47, 34, 34, 0.25); // HEX #2f222240 переведен в RGBA
+  }
+
+  &__title {
+    grid-area: title;
+  }
+
+  &__txt {
+    grid-area: txt;
+    color: rgba(47, 34, 34, 0.25); // HEX #2f222240 переведен в RGBA
+  }
+}

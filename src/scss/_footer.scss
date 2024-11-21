@@ -1,0 +1,23 @@
+@use './_variables.scss' as vars;
+
+.footer {
+  @include vars.footer;
+  background-color: vars.$background-color-fifth;
+  width: 100%;
+  &__logo {
+    margin: 40px auto;
+  }
+  &__items {
+    display: flex;
+    gap: 80px;
+    li a:hover {
+      color: vars.$color-third;
+    }
+  }
+  &__copy {
+    font-size: vars.$font-size-third;
+    font-weight: vars.$font-weight-third;
+    line-height: vars.$line-height-third;
+    margin: 64px auto 40px auto;
+  }
+}

@@ -1,0 +1,86 @@
+@mixin container () {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+  overflow: visible;
+  .aside {
+    .container {
+      height: auto;
+    }
+  }
+
+  @media(max-width: 1024px) {
+    max-width: 1108px;
+    padding: 0 42px;
+  }
+
+  @media(max-width: 425px) {
+    max-width: 425px;
+    padding: 0 20px;
+  }
+
+  @media(max-width: 320px) {
+    max-width: 320px;
+    padding: 0 0;
+  }
+}
+
+@mixin header () {
+  height: 70px;
+  background-color: #fff;
+  @media (max-width: 320px) {
+    height: 50px;
+    
+  }
+}
+@mixin hero () {
+  height: 300px;
+  margin-bottom: 40px;
+  @media (max-width: 1024px) {
+    height: 250px;
+  }
+  @media (max-width: 320px) {
+    height: 150px;
+  }
+}
+@mixin footer () {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 425px) {
+    .footer {
+      &__items {
+        gap: 20px;
+      }
+    }
+  }
+}
+
+
+
+$background-color-first: #f9f9f9;
+$background-color-second: #5D71DD;
+$background-color-third: #F7F8FD;
+$background-color-fourth: #7D8DE4;
+$background-color-fifth: #5D71DD0D;
+
+$gap-first: 40px;
+
+$color-first: #2f2222;
+$color-second: #2F222266;
+$color-third: #5d71dd;
+$color-fourth: #000;
+$color-fifth: #000;
+
+$font-weight-first: 400;
+$font-size-first: 18px;
+$line-height-first: 23px;
+
+$font-weight-second: 500;
+$font-size-second: 24px;
+$line-height-second: 30px;
+
+$font-weight-third: 400;
+$font-size-third: 14px;
+$line-height-third: 18px;

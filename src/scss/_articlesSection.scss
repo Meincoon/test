@@ -1,0 +1,25 @@
+@use './_variables.scss' as vars;
+
+.articles {
+  grid-area: articles;
+  display: grid;
+  gap: vars.$gap-first;
+  padding: 0;
+  width: 100%;
+  &__row {
+    display: flex;
+    gap: vars.$gap-first;
+
+    &-dual {
+      &-container {
+        display: grid;
+        height: 400px;
+        gap: vars.$gap-first;
+
+        .article {
+          height: 180px;
+        }
+      }
+    }
+  }
+}

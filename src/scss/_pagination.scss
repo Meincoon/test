@@ -1,0 +1,37 @@
+.pagination {
+  grid-area: pagination;
+  margin: 80px auto 100px auto;
+  margin-top: 80px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  &__number {
+    color: #000;
+    &:hover {
+      color: #5d71dd;
+    }
+  }
+
+  &__btn {
+    background: #5D71DD0D;
+    padding: 10px 16px;
+    color: #5D71DD;
+    border-radius: 8px;
+    &:hover {
+      background: #5D71DD26;
+    }
+    &:active {
+      background: #5D71DD33;
+    }
+    & img {
+      margin-left: 8px;
+    }
+  }
+  &__mobile-btn {
+    display: none;
+  }
+}

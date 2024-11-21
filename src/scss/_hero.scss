@@ -1,0 +1,7 @@
+@use './_variables.scss' as vars;
+.hero {
+  @include vars.hero;
+  &__img {
+    height: 100%;
+  }
+}

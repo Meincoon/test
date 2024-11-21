@@ -1,0 +1,90 @@
+@use './_reset.scss';
+@use './_variables.scss' as vars;
+@use './_header.scss';
+@use './_hero.scss';
+@use './_footer.scss';
+@use './_main.scss';
+@use './pagination.scss';
+@use './popularNews.scss';
+@use './form.scss';
+@use './articlesSection.scss';
+@use './article.scss';
+@use './burger.scss';
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../fonts/FuturaPT-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../fonts/FuturaPT-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*:hover {
+  transition: all 0.3s ease;
+}
+body, html {
+  overflow-x: hidden;
+}
+body {
+  background-color: vars.$background-color-first;
+  font-family: 'Futura PT', Arial, sans-serif;
+  font-weight: vars.$font-weight-first;
+  font-size: vars.$font-size-first;
+  line-height: vars.$line-height-first;
+  color: vars.$color-first;
+}
+
+.container {
+  @include vars.container
+}
+
+a {
+  color: vars.$color-first;
+}
+
+.title {
+  font-weight: vars.$font-weight-second;
+  font-size: vars.$font-size-second;
+  line-height: vars.$line-height-second;
+}
+
+.logo {
+  width: 50px;
+  height: 48px;
+}
+
+.active, .active:link {
+  text-decoration: underline;
+  color: vars.$color-third;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+    'articles aside'
+    'articles .'
+    'pagination .';
+  grid-template-columns: 1fr 320px;
+  gap: vars.$gap-first;
+  overflow: visible;
+}
+
+.aside {
+  grid-area: aside;
+  background: transparent;
+  position: sticky;
+  top: 0;
+  height: 700px;
+  width: 100%;
+  .container {
+    padding: 0;
+  }
+}

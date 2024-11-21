@@ -1,0 +1,9 @@
+.main {
+  display: grid;
+  grid-template-areas: 'articles' 'pagination';
+  gap: 80px;
+  width: 100%;
+  .container {
+    padding: 0;
+  }
+}
